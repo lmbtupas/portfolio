@@ -1,0 +1,38 @@
+.nav-bar {
+    width: 100%;
+    height: auto;
+    position: absolute;
+
+    .container {
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+        
+            img {
+                display: block;
+                width: 150px;
+                height: auto;
+            }
+        }
+
+        nav {
+            display: flex;
+            height: auto;
+            top: 50%;
+            gap: 30px;
+        
+            a {
+                font-size: 25px;
+                color: #0d3b66;
+                display: block;
+                text-decoration: none;
+                font-family: 'Coolvetica';
+            }
+        }
+    }
+}
+

@@ -1,0 +1,17 @@
+$primary-color: #faf0ca;
+$blue: #0d3b66;
+$yellow: #f4d35e;
+$orange: #ee964b;
+$red: #f95738;
+
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Coolvetica Regular';
+  src: url('./assets/coolvetica-rg.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Hanson Bold';
+  src: url('./assets/Hanson-Bold.otf') format('otf');
+}
