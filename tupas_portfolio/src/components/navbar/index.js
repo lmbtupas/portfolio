@@ -15,7 +15,7 @@ const Navbar = () => (
                 <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
                     About
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+                <NavLink exact="true" activeclassname="active" className="about-link" to="/work">
                     Work
                 </NavLink>
                 <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
