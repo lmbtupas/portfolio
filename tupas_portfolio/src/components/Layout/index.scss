@@ -1,19 +1,27 @@
-html {
-    scroll-snap-type: y mandatory;
-}
-
 section {
     height: 100vh;
-    scroll-snap-align: start;
 }
 
 h1 {
     margin: 0;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateY(100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
 .main_container {
+    height: 100vh;
     position: relative;
-    height: auto;
 
     .start_section {
         .start_container {
@@ -42,7 +50,6 @@ h1 {
 
             .me_photo {
                 width: 1000px;
-                display: block;
                 justify-content: center;
                 align-items: center;
             }
@@ -132,7 +139,13 @@ h1 {
     .services_section {
         background-color: #f4d35e;
         padding: 70px;
-        margin-bottom: -139px;
+
+        h1 {
+            font-family: 'Hanson';
+            font-size: 50px;
+            color: white;
+            margin-bottom: 20px;
+        }
 
         .services_container {
             display: flex;
@@ -164,9 +177,10 @@ h1 {
 
                 h1 {
                     font-family: 'Hanson';
-                    font-size: 35px;
+                    font-size: 50px;
                     color: #0d3b66;
                     margin-top: 10px;
+                    text-align: center;
                 }
             }
 
@@ -188,9 +202,10 @@ h1 {
 
                 h1 {
                     font-family: 'Hanson';
-                    font-size: 24px;
+                    font-size: 50px;
                     color: #0d3b66;
                     margin-top: 10px;
+                    text-align: center;
                 }
             }
 
@@ -212,9 +227,10 @@ h1 {
 
                 h1 {
                     font-family: 'Hanson';
-                    font-size: 35px;
+                    font-size: 50px;
                     color: #0d3b66;
                     margin-top: 10px;
+                    text-align: center;
                 }
             }
 
