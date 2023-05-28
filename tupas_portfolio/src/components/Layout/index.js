@@ -4,24 +4,11 @@ import './index.scss';
 import Navbar from '../navbar';
 
 import me from '../../assets/me.png';
-import Name_Sticker from '../../assets/Name_Sticker.png'
-import Sticker_1 from '../../assets/Sticker_1.png'
-import Sticker_3 from '../../assets/Sticker_3.png'
-import Sticker_4 from '../../assets/Sticker_4.png'
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    })     
-});
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+import Name_Sticker from '../../assets/Name_Sticker.png';
+import Sticker_1 from '../../assets/Sticker_1.png';
+import Sticker_3 from '../../assets/Sticker_3.png';
+import Sticker_4 from '../../assets/Sticker_4.png';
+import about_me from '../../assets/about_me.png';
 
 const Layout = () => {
     return (
@@ -73,6 +60,12 @@ const Layout = () => {
                     <section className='about_section'>
                         <div className='about_container'>
                             <h1> About Me</h1>
+                            <h1> Hi, I'm Yancy!</h1>
+                            <p> Hey there! I'm Leandro Tupas, but you can call me Yancy. I'm a 21-year-old computer science student, currently diving into my fourth year of studies. My passion lies in frontend development, where I enjoy crafting user-friendly and visually appealing interfaces. With a keen eye for design and a strong coding background, I strive to create engaging digital experiences that leave a lasting impact.</p>
+                        </div>
+
+                        <div className='about_photo'>
+                            <img src={about_me} alt="about_me" className="about_me_photo"/>
                         </div>
                     </section>
 
@@ -83,32 +76,8 @@ const Layout = () => {
                     </section>
 
                     <section className='services_section'>
-                        <h1> My Services</h1>
                         <div className='services_container'>
-
-                            <div className='brand_container'>
-                                <div className='brand_details hidden'>
-                                    <img src={Sticker_3} alt="Sticker_3" className="Sticker_2"/>
-                                    <h1>Brand Design</h1>  
-                                    <p> Crafting impactful brand identities that capture the essence of your business. From logo design to brand guidelines, I create visual assets that resonate with your target audience and convey your unique story. </p>
-                                </div>
-                            </div>
-
-                            <div className='fe_dev'> 
-                                <div className='fe_details hidden'>
-                                    <img src={Sticker_1} alt="Sticker_1" className="Sticker_1"/>
-                                    <h1>Frontend Development</h1>                       
-                                    <p>Transforming designs into seamless user experiences through clean and efficient code. I specialize in creating responsive websites and web applications that not only look stunning but also provide a smooth and intuitive interface for users.</p>
-                                </div>
-                            </div>
-
-                            <div className='ui_design'>
-                                <div className='ui_details hidden'>
-                                    <img src={Sticker_4} alt="Sticker_4"className="Sticker_3" />
-                                    <h1>UI/UX Design</h1>
-                                   <p>Designing user-centered interfaces that enhance the overall user experience. From wireframes to interactive prototypes, I create visually appealing and functional designs that prioritize usability, accessibility, and engagement, resulting in a delightful user journey.</p> 
-                                </div>
-                            </div>
+                            <h1> My Services</h1>
                         </div>
                     </section>
 

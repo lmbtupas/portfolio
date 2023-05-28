@@ -6,19 +6,6 @@ h1 {
     margin: 0;
 }
 
-.hidden {
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(5px);
-    transform: translateY(100%);
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-}
-
 .main_container {
     height: 100vh;
     position: relative;
@@ -110,8 +97,14 @@ h1 {
 
     .about_section {
         background-color: #ee964b;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
         .about_container {
             padding: 70px;
+            width: 600px;
+            height: auto;
 
             h1 {
                 font-family: 'Hanson';
@@ -119,18 +112,39 @@ h1 {
                 color: white;
                 margin: 0;
             }
+
+            p {
+                font-family: 'Coolvetica';
+                font-size: 25px;
+                color: white;
+
+            }
+        }
+
+        .about_photo {
+            overflow: hidden;
+            top: auto;
+
+            .about_me_photo {
+                position: relative;
+                width: auto;
+                height: 900px;
+                object-fit: contain;
+                bottom: 20%;
+            }
         }
     }
 
     .skills_section {
         background-color: #faf0ca;
+
         .skills_container {
             padding: 70px;
 
             h1 {
                 font-family: 'Hanson';
                 font-size: 50px;
-                color: white;
+                color: #0d3b66;
                 margin: 0;
             }
         }
@@ -138,108 +152,18 @@ h1 {
 
     .services_section {
         background-color: #f4d35e;
-        padding: 70px;
+
+        .services_container {
+            padding: 70px;
+        }
 
         h1 {
             font-family: 'Hanson';
             font-size: 50px;
             color: white;
-            margin-bottom: 20px;
+            margin-bottom: 0;
         }
 
-        .services_container {
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
-
-            h1 {
-                font-family: 'Hanson';
-                font-size: 50px;
-                color: white;
-
-            }
-
-            .brand_details {
-                display: flex;
-                flex-direction: column;
-                background-color: #faf0ca;
-                width: auto;
-                height: 80vh;
-                padding: 20px;
-                align-items: center;
-                justify-content: space-evenly;
-                border-radius: 20px;
-
-                img {
-                    width: 300px;
-                    height: auto;
-                }
-
-                h1 {
-                    font-family: 'Hanson';
-                    font-size: 50px;
-                    color: #0d3b66;
-                    margin-top: 10px;
-                    text-align: center;
-                }
-            }
-
-            .fe_details {
-                display: flex;
-                flex-direction: column;
-                background-color: #faf0ca;
-                width: auto;
-                height: 80vh;
-                padding: 20px;
-                align-items: center;
-                justify-content: space-evenly;
-                border-radius: 20px;
-
-                img {
-                    width: 200px;
-                    height: auto;
-                }
-
-                h1 {
-                    font-family: 'Hanson';
-                    font-size: 50px;
-                    color: #0d3b66;
-                    margin-top: 10px;
-                    text-align: center;
-                }
-            }
-
-            .ui_details {
-                display: flex;
-                flex-direction: column;
-                background-color: #faf0ca;
-                width: auto;
-                height: 80vh;
-                padding: 20px;
-                align-items: center;
-                justify-content: space-evenly;
-                border-radius: 20px;
-
-                img {
-                    width: 300px;
-                    height: auto;
-                }
-
-                h1 {
-                    font-family: 'Hanson';
-                    font-size: 50px;
-                    color: #0d3b66;
-                    margin-top: 10px;
-                    text-align: center;
-                }
-            }
-
-            p {
-                font-family: 'Coolvetica';
-                font-size: 20px;
-            }
-
-        }
     }
 
     .works_section {
@@ -247,7 +171,6 @@ h1 {
 
         .works_container {
             padding: 70px;
-            width: fit-content;
 
             h1 {
                 font-family: 'Hanson';
