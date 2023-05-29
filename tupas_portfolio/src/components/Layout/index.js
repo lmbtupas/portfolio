@@ -60,12 +60,53 @@ const Layout = () => {
                     <section className='about_section'>
                         <div className='about_container'>
                             <h1> About Me</h1>
-                            <h1> Hi, I'm Yancy!</h1>
-                            <p> Hey there! I'm Leandro Tupas, but you can call me Yancy. I'm a 21-year-old computer science student, currently diving into my fourth year of studies. My passion lies in frontend development, where I enjoy crafting user-friendly and visually appealing interfaces. With a keen eye for design and a strong coding background, I strive to create engaging digital experiences that leave a lasting impact.</p>
+                            <h2> Hi, I'm Yancy!</h2>
+                            <p> I'm a 21-year-old computer science student, currently diving into my fourth year of studies. My passion lies in frontend development, where I enjoy crafting user-friendly and visually appealing interfaces. With a keen eye for design and a strong coding background, I strive to create engaging digital experiences that leave a lasting impact.</p>
                         </div>
 
                         <div className='about_photo'>
                             <img src={about_me} alt="about_me" className="about_me_photo"/>
+                        </div>
+                    </section>
+
+                    <section className='slider_section'>
+                        <div className='slide_track'>
+                            <div className='slide'>
+                                <h1> Frontend Developer</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Brand Designer</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Creative</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Frontend Developer</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Brand Designer</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Creative</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Frontend Developer</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Brand Designer</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Creative</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Frontend Developer</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Brand Designer</h1>
+                            </div>
+                            <div className='slide'>
+                                <h1> Creative</h1>
+                            </div>
                         </div>
                     </section>
 
